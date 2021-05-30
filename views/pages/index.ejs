@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <%- include('../partials/head'); %>
+</head>
+<body class="container">
+
+<header>
+  <%- include('../partials/header'); %>
+</header>
+
+<main>
+
+  <h1>Name: <%= full %></h1>
+  <img src="<%= picture %>" />
+  
+  <h1>Gender: <%= gender %></h1>
+  <h2>Age: <%= dob.age %> | <%= dob.date %></h2>
+
+  <p>
+    <%= first  %> is a <%= emotionalTrait  %> type of person. You can find them
+    in there spare time doing something as a <%= hobbyTrait  %>. <%= first %> tends to be very
+    <%= lifestyleTrait  %>, and their friends would often discribe them as <%= socialTrait  %>.
+  </p>
+
+
+</main>
+
+<footer>
+  <%- include('../partials/footer'); %>
+</footer>
+
+</body>
+</html>
